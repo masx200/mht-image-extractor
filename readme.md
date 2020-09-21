@@ -90,3 +90,45 @@ Content-Transfer-Encoding: Base64
 @time: 2020/5/22 20:46  
 @desc:  
 
+# 处理chrome浏览器和qq浏览器保存的网页
+
+头部信息
+
+```
+
+
+From: <Saved by Blink>
+Snapshot-Content-Location: https://zhuanlan.zhihu.com/p/83130377
+Subject: =?utf-8?Q?=E4=BD=A0=E7=9F=A5=E9=81=93=E5=8F=91=E8=B5=B7=E4=B8=80=E6=AC=A1?=
+ =?utf-8?Q?DDOS=E6=94=BB=E5=87=BB=E9=9C=80=E8=A6=81=E5=A4=9A=E5=B0=91=E8?=
+ =?utf-8?Q?=B4=B9=E7=94=A8=E5=90=97=EF=BC=9F=20-=20=E7=9F=A5=E4=B9=8E?=
+Date: Sun, 19 Sep 2020 23:57:55 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--VjK26H6J1hen3mSUiigyebg9rwgfVt3ww0WPr7Q2V5----"
+
+
+```
+
+文件信息
+
+```
+
+------MultipartBoundary--Bx5ubV1DnfL8hvvsySfZL6MQeLa58tWkfwrQGpothO----
+Content-Type: image/bmp
+Content-Transfer-Encoding: binary
+Content-Location: https://mp.weixin.qq.com/mp/qrcode?scene=10000004&size=102&__biz=MzU1NzQ3MTg5OQ==&mid=2247483652&idx=1&sn=a16979f8b088cb60fb63f210536d5288&send_time=
+
+
+```
+```
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: https://pic3.zhimg.com/v2-f93341625ac2b5147b60e57f6999660d_s.jpg
+
+
+
+------MultipartBoundary--VjK26H6J1hen3mSUiigyebg9rwgfVt3ww0WPr7Q2V5------
+
+```
