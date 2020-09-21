@@ -17,7 +17,7 @@ import os
 import quopri
 import sys
 
-from pyfiglet import Figlet
+#from pyfiglet import Figlet
 
 current_path = os.path.dirname(os.path.abspath(__file__))
 dirname, filename = os.path.split(os.path.abspath(sys.argv[0]))
@@ -108,8 +108,8 @@ def get_content_type_and_content(line, sub_path_name, index):
 def print_usage():
     print('*' * 100)
     # f = Figlet(font='slant')
-    f = Figlet()
-    print(f.renderText('obaby@mars'))
+    #f = Figlet()
+    #print(f.renderText('obaby@mars'))
     print('mht image extractor by obaby')
     print('Verson: 0.5.22')
     print('baby_mht_image_extractor -f <input mht file> -o <output path> -p <input path>')
