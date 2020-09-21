@@ -118,7 +118,7 @@ def print_usage():
     print('\t -o <output path> ')
     print('Option Arguments:')
     print('\t -p <input path>')
-    print('Blog: http://www.h4ck.org.cn')
+    #print('Blog: http://www.h4ck.org.cn')
     print('*' * 100)
 
 
