@@ -193,13 +193,14 @@ ie 保存的文件，图片内容如下：
             
 mht image extractor by obaby  
                  
-             baby_mht_image_extractor -f <input mht file> -o <output path> -p <input path>             
+baby_mht_image_extractor -f <input mht file> -o <output path> -p <input path>             
    
-                           Need Arguments:      
-                                                -f <input mht file>     
+Need Arguments:      
 
-                                    -o <output path> 
+-f <input mht file>     
+
+-o <output path> 
                           
-        Option Arguments:                        
+Option Arguments:                        
 
-                            -p <input path>
+-p <input path>
