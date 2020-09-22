@@ -188,3 +188,18 @@ ie 保存的文件，图片内容如下：
 ![2](screenshots/zf-1024x800.jpg)
 
 ![2](screenshots/ie.jpg)
+
+#    使用说明
+            
+mht image extractor by obaby  
+                 
+             baby_mht_image_extractor -f <input mht file> -o <output path> -p <input path>             
+   
+                           Need Arguments:      
+                                                -f <input mht file>     
+
+                                    -o <output path> 
+                          
+        Option Arguments:                        
+
+                            -p <input path>
