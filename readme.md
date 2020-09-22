@@ -197,10 +197,10 @@ baby_mht_image_extractor -f <input mht file> -o <output path> -p <input path>
    
 Need Arguments:      
 
--f <input mht file>     
+`-f <input mht file> `    
 
--o <output path> 
+`-o <output path>` 
                           
 Option Arguments:                        
 
--p <input path>
+`-p <input path>`
