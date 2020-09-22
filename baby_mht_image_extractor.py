@@ -254,8 +254,11 @@ def main(argv):
     print("[C] 输入目录:" + input_path)
     print("[C] 输出目录:" + OUT_PATH)
 
-    btype = get_browser_type(input_file)
-    print("[B] 浏览器：", btype)
+    btype=""
+    
+    if input_file !='':
+        btype = get_browser_type(input_file)
+        print("[B] 浏览器：", btype)
 
     if btype == "ie":
         if os.path.isfile(input_file):
