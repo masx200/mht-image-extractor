@@ -7,7 +7,7 @@ http://h4ck.org.cn/2020/09/mht文件图片解析工具（兼容chrome-blink）/
 https://github.com/obaby/mht-image-extractor
 
 
-=================
+# =================
 
 网上找了一下没有找到比较现成的好用的工具，找到一个 mht-viewer 的 windows 下的查看工具，但是实际实用的时候发现啥都看不了，就是个文本编辑器？还是我打开的姿势不对？
 
@@ -155,17 +155,29 @@ Content-Location: https://pic3.zhimg.com/v2-f93341625ac2b5147b60e57f6999660d_s.j
 ------MultipartBoundary--VjK26H6J1hen3mSUiigyebg9rwgfVt3ww0WPr7Q2V5------
 
 ```
-===============
+
+# ===============
 
 
 
-之前写过一个mht文件的解析工具，不过当时解析的文件都是ie生成的。没有测试过chrome解析的文件。今天在github上看到一个反馈：https://github.com/obaby/mht-image-extractor/issues/1 qq浏览器保存的文件无法提取，chrome保存的文件会直接崩溃。下载附件的文件解析后发现，这两个文件的文件格式与ie的文件格式并不一致，文件头改成了如下的内容：
+之前写过一个mht文件的解析工具，不过当时解析的文件都是ie生成的。没有测试过chrome解析的文件。
+
+今天在github上看到一个反馈：
+
+https://github.com/obaby/mht-image-extractor/issues/1
+
+
+qq浏览器保存的文件无法提取，chrome保存的文件会直接崩溃。
+
+下载附件的文件解析后发现，这两个文件的文件格式与ie的文件格式并不一致，文件头改成了如下的内容：
 
 
 而ie保存的文件头则是如下格式的：
 
 
-其实文件的不同不止这两处，在chrome保存的文件中图片信息可能以二进制形式的存在，而不是之前的base64的编码。新的图片内容数据如下：
+其实文件的不同不止这两处，在chrome保存的文件中图片信息可能以二进制形式的存在，而不是之前的base64的编码。
+
+新的图片内容数据如下：
 
 
 
