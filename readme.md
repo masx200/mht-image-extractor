@@ -21,7 +21,7 @@ https://github.com/obaby/mht-image-extractor
 
 已经保存的图片如下：
 
-![1](screenshots/1.jpg)
+
 
 在文件中的存储结构如下：
 
