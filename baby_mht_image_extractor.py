@@ -205,8 +205,11 @@ def save_mht_all_images_chrome(input_path):
             elif "Content-Location" in str(line):
                 content_location = str(line).split(":")[-1]
             else:
-                if b"\r\n" == line:
+                if (b"\r\n" == line) and( content == b""):
+
                     pass
+
+                    # pass
                     # print('blank line')
                 else:
                     content += line
@@ -253,10 +256,9 @@ def main(argv):
     print("[C] 输入文件:" + input_file)
     print("[C] 输入目录:" + input_path)
     print("[C] 输出目录:" + OUT_PATH)
+    btype = ""
 
-    btype=""
-    
-    if input_file !='':
+    if input_file != "":
         btype = get_browser_type(input_file)
         print("[B] 浏览器：", btype)
 
