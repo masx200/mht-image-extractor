@@ -4,6 +4,9 @@ http://h4ck.org.cn/2020/05/mht文件图片解析工具/
 
 http://h4ck.org.cn/2020/09/mht文件图片解析工具（兼容chrome-blink）/
 
+https://github.com/obaby/mht-image-extractor
+
+
 =================
 
 网上找了一下没有找到比较现成的好用的工具，找到一个 mht-viewer 的 windows 下的查看工具，但是实际实用的时候发现啥都看不了，就是个文本编辑器？还是我打开的姿势不对？
