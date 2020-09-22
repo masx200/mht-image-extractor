@@ -194,3 +194,9 @@ ie保存的文件，图片内容如下：
 只对chrome保存的文件进行处理，我选择这种方法，主要是不用在测试第一种方法的兼容性。
 
 关键代码如下：
+
+![2](screenshots/mht.jpg)
+
+![2](screenshots/zf-1024x800.jpg)
+
+![2](screenshots/ie.jpg)
