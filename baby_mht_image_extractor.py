@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 @author: obaby
@@ -133,7 +132,7 @@ def print_usage():
     # f = Figlet()
     # print(f.renderText('obaby@mars'))
     print("mht image extractor by obaby")
-    # print('Verson: 0.9.22')
+    #print("Verson: 0.9.22.20")
     print(
         "baby_mht_image_extractor -f <input mht file> -o <output path> -p <input path>"
     )
@@ -142,7 +141,7 @@ def print_usage():
     print("\t -o <output path> ")
     print("Option Arguments:")
     print("\t -p <input path>")
-    # print('Blog: http://www.h4ck.org.cn')
+    print("Blog: http://www.h4ck.org.cn")
     print("*" * 100)
 
 
@@ -188,7 +187,11 @@ def save_mht_all_images_chrome(input_path):
                     if "base64" in content_transfer_encoding:
                         decoded_body = base64.b64decode(content)
                     if "binary" in content_transfer_encoding:
-                        decoded_body = content
+                        # 修复文件尾的\r\n错误
+                        if len(content) > 2 and content[-2:] == b"\r\n":
+                            decoded_body = content[0:-2]
+                        else:
+                            decoded_body = content
                     if decoded_body:
                         save_image_file(decoded_body, sub_path_name, filename)
                     else:
@@ -205,11 +208,8 @@ def save_mht_all_images_chrome(input_path):
             elif "Content-Location" in str(line):
                 content_location = str(line).split(":")[-1]
             else:
-                if (b"\r\n" == line) and (content == b""):
-
+                if b"\r\n" == line and content == b"":
                     pass
-
-                    # pass
                     # print('blank line')
                 else:
                     content += line
